@@ -106,3 +106,31 @@ def print_items(a, b):
 # O(a) * O(b) == O(a * b)
 
 print("***************")
+
+## Big(O) of lists
+
+# O(1) - Adding or removing items on the last index
+"""
+This is because the items originally in the 
+list are not re-indexed
+"""
+my_list = [11, 3, 23, 7]
+my_list.append(17)
+# [11, 3, 23, 7, 17]
+my_list.pop()
+# [11, 3, 23, 7]
+
+# O(n) - Adding or removing items on the first or middle index of the list
+"""
+This is because after adding an item, the items
+in the list has to be re-indexed
+"""
+my_list = [11, 3, 23, 7]
+my_list.pop(0)
+#[3, 23, 7]
+my_list.insert(0, 11)
+#[11, 3, 23, 7]
+my_list.insert(1, "Hi")
+#[11, 'Hi', 3, 23, 7]
+my_list.pop(1)
+#[11, 3, 23, 7]
