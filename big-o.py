@@ -25,7 +25,6 @@ print_items2(20)
 print("***************")
 
 ## O(n**2)
-
 def print_items3(n):
     for i in range(n):
         for j in range (n):
@@ -33,7 +32,6 @@ def print_items3(n):
 print_items3(10)
 
 # n * n items were printed out == n**2 == O(n**2)
-
 print("***************")
 
 def print_items4(n):
@@ -44,6 +42,7 @@ def print_items4(n):
 print_items4(10)
 
 # n * n * n == O(n**3) == O(n**2)
+print("***************")
 
 #simplifying the O notation - Drop Non-Dominants
 
@@ -55,4 +54,36 @@ def print_items5(n):
         print(k)
 print_items5(10)
 
-#
+# ran O(n**2 + n) == O(n**2)
+print("***************")
+
+## O(1) - Most efficient Big(O)
+def add_items(n):
+    return n+n
+add_items()
+
+def add_items2(n):
+    return n+n+n+n
+add_items2()
+
+#As the number of n increases, the number of operation remains constant
+print("***************")
+
+## O(log n)
+"""
+eg. Having a list [1, 2, 3, 4, 5, 6, 7, 8] (sorted data),
+Look for number 3
+
+
+Cut the list into halves removing the half that 1 is
+not present...
+1. [1, 2, 3, 4] [5, 6, 7, 8] - We eliminate the second half
+2. [1, 2] [3, 4] - We eliminate the first half
+3. [3] [4] - We eliminate the second half and we are left with 3
+
+How many steps (operations) did we go? - 3 steps (operations)
+How many items are in the list? - 8 items
+
+2**3 == 8 (Turning it into a logarithm) -- log2 8 = 3
+
+"""
