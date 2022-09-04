@@ -86,4 +86,23 @@ How many items are in the list? - 8 items
 
 2**3 == 8 (Turning it into a logarithm) -- log2 8 = 3
 
+log2 1073741824 == 31 
 """
+print("***************")
+
+## O(nlog n) --- Used in some sorting algorithms
+def print_items2(a, b):
+    for i in range(a):
+        print(a)
+
+    for j in range(b):
+        print(b)
+# O(a) + O(b) == O(a + b)
+
+def print_items(a, b):
+    for i in range(a):
+        for j in range(b):
+            print(i, j)
+# O(a) * O(b) == O(a * b)
+
+print("***************")
