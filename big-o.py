@@ -137,3 +137,10 @@ my_list.insert(1, "Hi")
 #[11, 'Hi', 3, 23, 7]
 my_list.pop(1)
 #[11, 3, 23, 7]
+
+'''
+O(n**2) -- Loop within a loop
+O(n) -- Proportional
+O(log n) -- Divide and conquer
+O(1) - Constant
+'''
