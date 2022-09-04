@@ -110,6 +110,8 @@ print("***************")
 ## Big(O) of lists
 
 # O(1) - Adding or removing items on the last index
+# O(1) also occurs when you're looking for an item in a list using index
+# eg. my_list[3]
 """
 This is because the items originally in the 
 list are not re-indexed
@@ -121,6 +123,7 @@ my_list.pop()
 # [11, 3, 23, 7]
 
 # O(n) - Adding or removing items on the first or middle index of the list
+# O(n) also occurs when you're looping over a list to find an item
 """
 This is because after adding an item, the items
 in the list has to be re-indexed
