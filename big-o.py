@@ -140,6 +140,7 @@ my_list.pop(1)
 
 '''
 O(n**2) -- Loop within a loop
+O(nlog n) -- When one has different parameters in the function and wanna perform an operation on them.
 O(n) -- Proportional
 O(log n) -- Divide and conquer
 O(1) - Constant
